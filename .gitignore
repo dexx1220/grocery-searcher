@@ -1,0 +1,6 @@
+.vscode
+images/*.jpg
+images/*.png
+*.pyc
+test.py
+venv
