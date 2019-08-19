@@ -1,15 +1,20 @@
 import downloader
-import grocery_links
+import groceries
 import scraper
+import time
 
-url = grocery_links.GROCERY_LINKS[0]
+groceries_data = groceries.GROCERY_DATA
 
-flyer_link = scraper.get_flyer_link(url)
-print("Flyer link: " + flyer_link)
+for i, item in enumerate(groceries_data, start=1):
+  store_name = item.get('name')
+  url = item.get('link')
 
-image_links = scraper.get_image_links(flyer_link)
-print("Image links:")
-print(image_links)
+  flyer_link = scraper.get_flyer_link(url)
+  image_links = scraper.get_image_links(flyer_link)
 
-for idx, link in enumerate(image_links, start=1):
-  downloader.download_image(link, "./images/basics-" + str(idx) + ".jpg")
+  for idx, link in enumerate(image_links, start=1):
+    downloader.download_image(link, "./images/" + store_name + "-" + str(idx) + ".jpg")
+  
+  if (i < len(groceries_data)):
+    print("=== SLEEPING FOR 10 SECONDS ===")
+    time.sleep(10)

@@ -1,6 +1,6 @@
 .vscode
+venv
 images/*.jpg
 images/*.png
 *.pyc
 test.py
-venv
