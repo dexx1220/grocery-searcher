@@ -4,3 +4,4 @@ images/*.jpg
 images/*.png
 *.pyc
 test.py
+Vision-V1.json
