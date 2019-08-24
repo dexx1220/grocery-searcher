@@ -2,9 +2,13 @@ from bs4 import BeautifulSoup
 import urllib2
 import re
 
-def get_flyer_link(url):
+def get_flyer_link(url, excludeProvince):
   soup = getContent(url)
   pattern = "\-on\-|\-gta\-"
+  
+  if excludeProvince:
+    pattern = "[0-9]+\-to\-[0-9]+"
+
   target_link = ""
 
   for link in soup.find_all('a'):

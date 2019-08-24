@@ -5,5 +5,5 @@
 - Run `deactivate` when you're done.
 
 ## Step 2: Authenticate with GCP
-- Run `export GOOGLE_APPLICATION_CREDENTIALS=[credentials_json]`
+- Run `export GOOGLE_APPLICATION_CREDENTIALS="[credentials_json]"`
 

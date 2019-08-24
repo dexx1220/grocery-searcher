@@ -5,7 +5,8 @@ GROCERY_DATA = [
   },
   {
     'name': 'fortinos',
-    'link':'https://flyers.smartcanucks.ca/fortinos-canada'
+    'link': 'https://flyers.smartcanucks.ca/fortinos-canada',
+    'excludeProvince': True
   },
   {
     'name': 'freshco',
