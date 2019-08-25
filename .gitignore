@@ -1,9 +1,9 @@
 .vscode
 venv
-images/*.jpg
-images/*.png
+images/*
 *.pyc
 test.py
 Vision-V1.json
 groceries.py
 config.py
+.DS_Store
