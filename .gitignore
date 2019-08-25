@@ -5,3 +5,5 @@ images/*.png
 *.pyc
 test.py
 Vision-V1.json
+groceries.py
+config.py

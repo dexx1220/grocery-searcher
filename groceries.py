@@ -37,3 +37,10 @@ GROCERY_DATA = [
     'link': 'https://flyers.smartcanucks.ca/walmart-canada'
   }
 ]
+
+GROCERY_ITEMS = [
+  "avocado",
+  "cucumber",
+  "celery",
+  "cream"
+]
